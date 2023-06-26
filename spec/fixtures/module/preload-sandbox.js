@@ -58,7 +58,6 @@
       ipcRenderer.on('touch-the-opener', () => {
         let errorMessage = null;
         try {
-          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           const openerDoc = opener.document;
         } catch (error) {
           errorMessage = error.message;

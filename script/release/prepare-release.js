@@ -173,7 +173,7 @@ async function verifyNewVersion () {
 }
 
 async function promptForVersion (version) {
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     const rl = readline.createInterface({
       input: process.stdin,
       output: process.stdout

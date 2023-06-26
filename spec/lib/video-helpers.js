@@ -394,10 +394,8 @@ function parseWebP (riff) {
   const height = tmp & 0x3FFF;
   const verticalScale = tmp >> 14;
   return {
-    width,
-    height,
-    horizontalScale,
-    verticalScale,
+    width: width,
+    height: height,
     data: VP8,
     riff: riff
   };

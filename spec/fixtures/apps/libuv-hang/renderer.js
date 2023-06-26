@@ -1,3 +1,5 @@
+const count = localStorage.getItem('count');
+
 const { run, ipcRenderer } = window.api;
 
 run().then(async () => {

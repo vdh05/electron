@@ -1,4 +1,4 @@
-const { ipcRenderer } = require('electron');
+const { ipcRenderer, webFrame } = require('electron');
 
 ipcRenderer.send('answer', {
   argv: process.argv
